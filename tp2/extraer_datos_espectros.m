@@ -30,14 +30,11 @@ for x = 1:length(archivos)
 
     datos = datos - max(datos); 
 
-    figure
-    plot(datos)
-   
     %% DIAGRAMA EN POLARES
     
     division = 2*pi/length(datos);
     theta = 0:division:2*pi - division;
-    gain = 10.^(datos./10);
+    gain = 10.^(datos./10);    
     rmin = min(datos);
     rmax = max(datos);
     circs=3;
@@ -45,10 +42,16 @@ for x = 1:length(archivos)
     
     figure
     polar_dB(theta,gain,rmin,rmax,circs,deg)
+    saveas(gcf,fullfile('imagenes', [num2str(x) 'polar.png']))
+
     
     %% ANCHO DEL HAZ
     
     ancho_haz = hpbw(gain,theta);
     disp(['Ancho del haz = ' num2str(ancho_haz)]);
     
+    mayor_media = sum(gain >= 0.5) - 1; % Cuenta todos los elementos cuya ganancia es mayor o igual a 0.5
+    ancho_haz = mayor_media * division * 360 / (2*pi);
+    disp(['Ancho del haz = ' num2str(ancho_haz)]);
+
 end

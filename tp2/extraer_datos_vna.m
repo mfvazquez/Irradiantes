@@ -18,14 +18,13 @@ for x = 1:length(datos_vna)
     f = S.Frequencies./1e9;
     
     figure
-    subplot(2,1,1);
     plot(f,real(Z))
-    ylabel('Re(Zo) [Ohm]');
-    xlabel('Frecuencia [GHz]');
-    subplot(2,1,2); 
+    hold on
     plot(f,imag(Z))
-    ylabel('Im(Zo) [Ohm]');
+    ylabel('Impedancia [Ohm]');
     xlabel('Frecuencia [GHz]');
+    legend('Real','Imaginaria');
+    ylim([-50 100]);
     saveas(gcf,fullfile('imagenes',[antenas{x} '_impedancia.png']))
     
     rho = abs(gamma);
@@ -42,10 +41,11 @@ for x = 1:length(datos_vna)
     plot(f,ROE)
     hold on
     plot(f,2*ones(size(f)),'-.r');
-    yticks(2)
     ylabel('ROE');
     xlabel('Frecuencia [GHz]');
     legend('Antena','ROE=2');
+    ylim([1 3]);
+
     saveas(gcf,fullfile('imagenes',[antenas{x} '_ROE.png']))
     
 end
