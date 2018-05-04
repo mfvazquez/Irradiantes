@@ -48,7 +48,7 @@ for x = 1:length(archivos)
     %% ANCHO DEL HAZ
     
     ancho_haz = hpbw(gain,theta);
-    disp(['Ancho del haz = ' num2str(ancho_haz)]);
+    disp(['Ancho del haz funcion = ' num2str(ancho_haz)]);
     
     mayor_media = sum(gain >= 0.5) - 1; % Cuenta todos los elementos cuya ganancia es mayor o igual a 0.5
     ancho_haz = mayor_media * division * 360 / (2*pi);

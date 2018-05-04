@@ -1,0 +1,81 @@
+=========================  L O G - FILE - OPTFEKO  =========================
+
+Version: 7.0-0 of 2013-09-23
+Date: 2018-05-03 21:15:38
+File: antena
+
+OPTIMISATION WITH FEKO
+
+=============== Optimisation variables ===============
+
+No.  Name                                  Beg.value          Minimum          Maximum
+  1 distancia_plano                  1.500000000e-02  1.500000000e-02  1.600000000e-02
+
+
+
+=============== Optimisation goals ===============
+
+No.  Name                            Expression
+  1 search1.goals.impedancegoal1    min(ex_vswr:50(impedance(voltagesource1)))
+
+
+=============== Optimisation method: SIMPLEX NELDER-MEAD ===============
+
+Maximum number of iterations:                      1000
+Base of the simplex:                    1.500000000e-01
+Reduction factor of the base:           5.000000000e-01
+Termination at minimal base:            5.000000000e-03
+Termination at standard deviation:      1.000000000e-04
+Standard reflection coefficient (R):    1.000000000e+00
+Contraction coefficient (-C, +C):       5.000000000e-01
+Expansion coefficient (E):              2.000000000e+00
+
+
+=============== SIMPLEX NELDER-MEAD: Intermediate results ===============
+
+ No.    distancia_plano  search1.goals.i  global goal      Operation   Global best aim
+     1  1.500000000e-02  1.150931760e+00  1.150931760e+00       -----  1.150931760e+00
+     2  1.515000000e-02  1.132071429e+00  1.132071429e+00       -----  1.132071429e+00
+     3  1.530000000e-02  1.113827940e+00  1.113827940e+00           R  1.113827940e+00
+     4  1.545000000e-02  1.096204801e+00  1.096204801e+00   E success  1.096204801e+00
+     5  1.560000000e-02  1.079237372e+00  1.079237372e+00           R  1.079237372e+00
+     6  1.575000000e-02  1.062925830e+00  1.062925830e+00   E success  1.062925830e+00
+     7  1.590000000e-02  1.047425906e+00  1.047425906e+00           R  1.047425906e+00
+   ---  1.605000000e-02  Parameter set does not adhere to boundary constraints. No goal function values were computed.
+   ---  1.605000000e-02  Parameter set does not adhere to boundary constraints. No goal function values were computed.
+     8  1.582500000e-02  1.054932767e+00  1.054932767e+00  -C success
+     9  1.597500000e-02  1.040057070e+00  1.040057070e+00           R  1.040057070e+00
+   ---  1.605000000e-02  Parameter set does not adhere to boundary constraints. No goal function values were computed.
+   ---  1.605000000e-02  Parameter set does not adhere to boundary constraints. No goal function values were computed.
+    10  1.593750000e-02  1.043717987e+00  1.043717987e+00  -C success
+   ---  1.601250000e-02  Parameter set does not adhere to boundary constraints. No goal function values were computed.
+    11  1.595625000e-02  1.041884581e+00  1.041884581e+00  -C success
+    12  1.599375000e-02  1.038278698e+00  1.038278698e+00           R  1.038278698e+00
+   ---  1.601250000e-02  Parameter set does not adhere to boundary constraints. No goal function values were computed.
+   ---  1.601250000e-02  Parameter set does not adhere to boundary constraints. No goal function values were computed.
+    13  1.598437500e-02  1.039167646e+00  1.039167646e+00  -C success
+   ---  1.600312500e-02  Parameter set does not adhere to boundary constraints. No goal function values were computed.
+    14  1.598906250e-02  1.038722699e+00  1.038722699e+00  -C success
+    15  1.599843750e-02  1.037841660e+00  1.037841660e+00           R  1.037841660e+00
+   ---  1.600312500e-02  Parameter set does not adhere to boundary constraints. No goal function values were computed.
+   ---  1.600312500e-02  Parameter set does not adhere to boundary constraints. No goal function values were computed.
+    16  1.599609375e-02  1.038059740e+00  1.038059740e+00  -C success
+   ---  1.600078125e-02  Parameter set does not adhere to boundary constraints. No goal function values were computed.
+    17  1.599726563e-02  1.037948578e+00  1.037948578e+00  -C success
+
+
+=============== SIMPLEX NELDER-MEAD: Finished ===============
+
+Optimisation finished (Standard deviation small enough:   7.560237074e-05)
+
+Optimum found for these parameters:
+  distancia_plano                =   1.599843750e-02
+
+Optimum aim function value (at no. 14):   1.037841660e+00
+No. of the last analysis: 17
+
+Sensitivity of optimum value with respect to each optimisation parameter,
+i.e. the gradient of the aim function at 1% variation from the optimum:
+Parameter                          Sensitivity
+  distancia_plano                  9.123660633e+16
+

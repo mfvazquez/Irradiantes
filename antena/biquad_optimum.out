@@ -1,0 +1,1800 @@
+FEKO.CSV  Version 7.0-391 from 2014-05-05 (FEKO Suite 7.0)
+          PREFEKO Version 7.0-37 from 2014-05-02 [FEK: default 147; used 147] BINARY
+          CADFEKO version 7.0-238289 (x64) from 2014-05-05                                
+          Copyright (c) 1999-2014 EM Software & Systems-S.A. (Pty) Ltd
+          Intel(R) MKL version 11.0.5 (build 20130612) on Intel(R) Core(TM) i7 Processor, Intel(R) 64 architecture (1 thread)
+Computer: PC WIN64 EM64T MKL IMPI -- Matias-Notebook
+          Microsoft Windows 7 Ultimate Edition  (Build 7600), Version 6.1.7600 x64 (SP 0.0)
+          Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz; GenuineIntel family 6 model 10 stepping 9 brand id 0
+          1 physical CPU with a total of 4 processors found (multi-core CPU with max. 2 cores per physical CPU)
+Threads:  OpenMP threading not used
+Date:     2018-05-03 21:08:25                     
+File:     biquad_optimum
+Memory:   Unlimited, system allows maximum usage of 1.855 GByte
+          (for parallel runs memory limit is per process)
+          (installed memory 3.905 GByte, thereof free 2.139 GByte)
+MD5 Check:5C5FB5E41E2C14B20BAE4DA43B537195
+MD5 Total:530F12095CE11FF68EE54E3B3AE01D14
+Licence:  Nodelocked licence no. 5747-5593-1319592               
+
+Number of parallel processes:     2 on 1 CPUs
+
+Master process    0 on machine: Matias-Notebook                using 1 threads
+Server process    1 on machine: Matias-Notebook                using 1 threads
+
+ NOTE    38034: It was detected that HyperThreading is active on this system, you might consider disabling it to improve FEKOs performance
+ NOTE    38034: It was detected that HyperThreading is active on this system, you might consider disabling it to improve FEKOs performance
+
+          Surface of all triangles in m*m:     2.65249E-02
+
+          Length of the segments in m:         2.44623E-01
+
+
+                                DATA FOR MEMORY USAGE
+
+ Number of metallic triangles:             500                                max. triangles:    MAXNDR    =      500
+ Number of dielectric triangles:             0
+ Number of aperture triangles:               0
+ Number of GO triangles:                     0
+ Number of windscreen triangles:             0
+ Number of FEM surface triangles:            0
+ Number of modal port triangles:             0
+ Number of metallic segments:              105                                max. segments:     MAXNSEG   =      105
+ Number of combined MoM/MTL segments:        0
+ Number of dielectr./magnet. cuboids:        0                                max. cuboids:      MAXNQUA   =        0
+ Number of tetrahedra:                       0                                max. tetrahedra:   MAXNTETRA =        0
+ Number of edges in PO region:               0                                max. edges:        MAXPOKA   =        0
+ Number of wedges in PO region:              0                                max. wedges:       MAXPOKL   =        0
+ Number of Fock regions:                     0                                max. Fock regions: MAXFOGE   =        0
+ Number of polygonal surfaces:               0                                max. surfaces:     MAXPOLYF  =        0
+                                                                              max. corner pts.:  MAXPOLYP  =        0
+ Number of UTD cylinders:                    0
+
+ Number of metallic edges (MoM):           722  unknown:      722 (electr.)   max. edges:        MAXNKA    =      750
+                                             0  unknown:        0 (magnet.)
+ Number of metallic edges (PO):              0  unknown:        0 (electr.)
+                                                unknown:        0 (magnet.)
+ Number of dielectric edges (MoM):           0  unknown:        0 (electr.)
+                                             0                  0 (magnet.)
+ Number of dielectric edges (PO):            0  unknown:        0 (electr.)
+                                                unknown:        0 (magnet.)
+ Number of aperture edges (MoM):             0  unknown:        0 (magnet.) 
+ Number of edges FEM/MoM surface:            0  unknown:        0 (electr.)
+                                             0                  0 (magnet.)
+ Number of nodes between segments:         106  unknown:      106             max. nodes:        MAXNKNO   =      168
+ Number of connection points:                0  unknown:        0             max. conn.:        MAXNV     =      100
+ Number of dielectric cuboids:               0  unknown:        0             max. cuboids:      MAXNQUA   =        0
+ Number of magnetic cuboids:                 0  unknown:        0
+ Number of dielectric faces (VEP):           0  unknown:        0
+ Number of magnetic faces (VEP):             0  unknown:        0
+
+ Number of basis funct. for MoM:           828  unknown:      828             max. basisf.       MAXNZEILE =     1018
+ Number of basis funct. for PO:              0  unknown:        0             max. basisf.       MAXNKAPO  =        0
+
+ Distributed storage of MoM matrix for parallel version
+
+ read from input file:
+PS       0    0    3    1    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from input file:
+CG      -1    0   -1    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00-1.000E+00-1.000E+00 0.000E+00 0.000E+00
+ read from input file:
+DI       0    0   -1    0    0 1.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 1.000E+03 0.000E+00 0.000E+00
+ read from input file:
+PW       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from input file:
+A1       0    2    1    0    0 1.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 5.000E+01 0.000E+00 0.000E+00
+ read from input file:
+FR      17    0    0    0    0 2.000E+09 0.000E+00 2.800E+09 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+NC       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+DA       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+OS       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ 
+ 
+      ==============
+      CONFIGURATION: StandardConfiguration1
+      ==============
+
+
+                              DATA FOR DIELECTRIC MEDIA
+
+internal  relative     relative  conductivity   tan(delta)    tan(delta)    wavelength   mass density    volume     medium
+index  permittivity permeability   in S/m       (electric)    (magnetic)       in m       in kg/m^3      in m^3
+    0      1.00000      1.00000  0.00000E+00   0.00000E+00   0.00000E+00   1.49896E-01   1.00000E+03    infinite    0
+
+
+
+                    EXCITATION BY VOLTAGE SOURCE AT SEGMENT
+
+ Name:                        VoltageSource1
+ Excitation index:            N = 1
+ Frequency in Hz:             FREQ =    2.00000E+09
+ Wavelength in m:             LAMBDA =  1.49896E-01
+ Open circuit voltage in V:   |U0| =    1.00000E+00
+ Phase in deg.:               ARG(U0) =        0.00
+ Source at segment label:     ULA = Union1.Wire33.Port1
+ Absolute number of segment:  UNR = 1
+ Location of the excit. in m: X =  0.00000E+00
+                              Y =  0.00000E+00
+                              Z =  0.00000E+00
+ Positive feed direction:     X =  0.00000E+00
+                              Y =  1.00000E+00
+                              Z =  0.00000E+00
+
+
+                         DATA FOR THE GREEN'S FUNCTION
+
+                                   free space
+
+
+               All segments and triangles are perfectly conducting
+
+
+                     READING SOLUTION COEFFICIENTS FROM FILE 
+
+ The checksum indicates a change in the input file which might affect
+ the validity of the *.str file
+ NOTE    32313: The *.str file is not valid for the current solution (checksum mismatch)
+ NOTE    34058: Reading a solution from a *.str file not possible (file will be deleted and newly created)
+
+
+                    DISTRIBUTED STORAGE OF MATRIX
+
+   Number of rows of the matrix             =            828
+   Number of columns of the matrix          =            828
+   Number of rows of the process grid       =              1
+   Number of columns of the process grid    =              2
+   Block size                               =            128
+   Theoretical load in percent              =          93.24
+   Number of rows of local matrix (proc. 0) =            828
+   Number of columns of local mat.(proc. 0) =            444
+   Local memory requirement for matrix      =         367632 complex numbers
+   (corresponds to 2.805 MByte)
+
+ Storage using single precision
+
+ Memory requirement for MoM matrix:       828 rows *      828 columns =      685584 complex numbers
+ For the MoM matrix, a memory of       367632 complex numbers is used (i.e. 2.805 MByte)
+
+     Per process, 3.279 MByte of memory has been allocated dynamically,
+     which corresponds to 6.559 MByte in total for all processes together
+     (peak memory usage of 3.279 MByte per process so far)
+
+
+
+               PRE-CONDITIONING OF THE LINEAR SET OF EQUATIONS
+
+               Selected preconditioner algorithm: 1
+
+     CPU time for preconditioning:       0.031 seconds
+
+
+                    SOLUTION OF THE LINEAR SET OF EQUATIONS WITH SCALAGAU
+
+               Condition number of the matrix:  3.14804E+03
+
+               Floating point performance for LU decomposition:
+                          1907.757 MFLOPS(SP) for CPU-time       0.796 seconds
+                           953.879 MFLOPS(SP) per process
+                          1907.757 MFLOPS(SP) for run-time       0.796 seconds
+                           953.879 MFLOPS(SP) per process
+
+     CPU time for solving the linear set of equations:       0.796 seconds
+
+
+                         DATA OF THE VOLTAGE SOURCE NO. 1
+
+                    real part  imag. part   magnitude       phase
+ Current   in A    1.3227E-03  7.0826E-03  7.2050E-03       79.42
+ Admitt.   in A/V  1.3227E-03  7.0826E-03  7.2050E-03       79.42
+ Impedance in Ohm  2.5479E+01 -1.3643E+02  1.3879E+02      -79.42
+ Capacitance in F  5.8327E-13
+
+                                   Power in Watt: 6.61338E-04
+
+
+                              SCATTERING PARAMETERS
+
+       ports                                        magnitude          phase 
+    sink source     real part   imag. part      linear      in dB     in deg.
+ S     1      1   6.89529E-01 -5.61196E-01   8.89040E-01   -1.0216    -39.14
+         Sum |S|^2 of these S-parameters:    7.90392E-01   -1.0216
+         Reference impedance in Ohm:  5.00000E+01
+
+
+
+
+                              SUMMARY OF LOSSES
+
+          Metallic elements:                          0.0000E+00 W
+          Dielectric:                                 0.0000E+00 W
+          Mismatch at feed:                           0.0000E+00 W
+          Non-radiating networks:                     0.0000E+00 W
+          Cables:                                     0.0000E+00 W
+          Backward power at passive waveguide ports:  0.0000E+00 W
+          Backward power at passive modal ports:      0.0000E+00 W
+                                                     -------------
+                Sum of all losses:                    0.0000E+00 W
+
+          Efficiency of the antenna:                    100.0000 %
+          (based on a total active power:             6.6134E-04 W)
+
+ read from buffer:
+NC       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+DA       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+OS       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+
+
+                              DATA FOR DIELECTRIC MEDIA
+
+internal  relative     relative  conductivity   tan(delta)    tan(delta)    wavelength   mass density    volume     medium
+index  permittivity permeability   in S/m       (electric)    (magnetic)       in m       in kg/m^3      in m^3
+    0      1.00000      1.00000  0.00000E+00   0.00000E+00   0.00000E+00   1.46240E-01   1.00000E+03    infinite    0
+
+
+
+                    EXCITATION BY VOLTAGE SOURCE AT SEGMENT
+
+ Name:                        VoltageSource1
+ Excitation index:            N = 1
+ Frequency in Hz:             FREQ =    2.05000E+09
+ Wavelength in m:             LAMBDA =  1.46240E-01
+ Open circuit voltage in V:   |U0| =    1.00000E+00
+ Phase in deg.:               ARG(U0) =        0.00
+ Source at segment label:     ULA = Union1.Wire33.Port1
+ Absolute number of segment:  UNR = 1
+ Location of the excit. in m: X =  0.00000E+00
+                              Y =  0.00000E+00
+                              Z =  0.00000E+00
+ Positive feed direction:     X =  0.00000E+00
+                              Y =  1.00000E+00
+                              Z =  0.00000E+00
+
+
+                         DATA FOR THE GREEN'S FUNCTION
+
+                                   free space
+
+
+               All segments and triangles are perfectly conducting
+
+
+               PRE-CONDITIONING OF THE LINEAR SET OF EQUATIONS
+
+               Selected preconditioner algorithm: 1
+
+     CPU time for preconditioning:       0.016 seconds
+
+
+                    SOLUTION OF THE LINEAR SET OF EQUATIONS WITH SCALAGAU
+
+               Condition number of the matrix:  3.55977E+03
+
+               Floating point performance for LU decomposition:
+                    Not determined since computation time too short
+
+     CPU time for solving the linear set of equations:       0.093 seconds
+
+
+                         DATA OF THE VOLTAGE SOURCE NO. 1
+
+                    real part  imag. part   magnitude       phase
+ Current   in A    1.9221E-03  8.2135E-03  8.4354E-03       76.83
+ Admitt.   in A/V  1.9221E-03  8.2135E-03  8.4354E-03       76.83
+ Impedance in Ohm  2.7012E+01 -1.1543E+02  1.1855E+02      -76.83
+ Capacitance in F  6.7258E-13
+
+                                   Power in Watt: 9.61026E-04
+
+
+                              SCATTERING PARAMETERS
+
+       ports                                        magnitude          phase 
+    sink source     real part   imag. part      linear      in dB     in deg.
+ S     1      1   6.00041E-01 -5.99482E-01   8.48191E-01   -1.4301    -44.97
+         Sum |S|^2 of these S-parameters:    7.19428E-01   -1.4301
+         Reference impedance in Ohm:  5.00000E+01
+
+
+
+
+                              SUMMARY OF LOSSES
+
+          Metallic elements:                          0.0000E+00 W
+          Dielectric:                                 0.0000E+00 W
+          Mismatch at feed:                           0.0000E+00 W
+          Non-radiating networks:                     0.0000E+00 W
+          Cables:                                     0.0000E+00 W
+          Backward power at passive waveguide ports:  0.0000E+00 W
+          Backward power at passive modal ports:      0.0000E+00 W
+                                                     -------------
+                Sum of all losses:                    0.0000E+00 W
+
+          Efficiency of the antenna:                    100.0000 %
+          (based on a total active power:             9.6103E-04 W)
+
+ read from buffer:
+NC       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+DA       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+OS       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+
+
+                              DATA FOR DIELECTRIC MEDIA
+
+internal  relative     relative  conductivity   tan(delta)    tan(delta)    wavelength   mass density    volume     medium
+index  permittivity permeability   in S/m       (electric)    (magnetic)       in m       in kg/m^3      in m^3
+    0      1.00000      1.00000  0.00000E+00   0.00000E+00   0.00000E+00   1.42758E-01   1.00000E+03    infinite    0
+
+
+
+                    EXCITATION BY VOLTAGE SOURCE AT SEGMENT
+
+ Name:                        VoltageSource1
+ Excitation index:            N = 1
+ Frequency in Hz:             FREQ =    2.10000E+09
+ Wavelength in m:             LAMBDA =  1.42758E-01
+ Open circuit voltage in V:   |U0| =    1.00000E+00
+ Phase in deg.:               ARG(U0) =        0.00
+ Source at segment label:     ULA = Union1.Wire33.Port1
+ Absolute number of segment:  UNR = 1
+ Location of the excit. in m: X =  0.00000E+00
+                              Y =  0.00000E+00
+                              Z =  0.00000E+00
+ Positive feed direction:     X =  0.00000E+00
+                              Y =  1.00000E+00
+                              Z =  0.00000E+00
+
+
+                         DATA FOR THE GREEN'S FUNCTION
+
+                                   free space
+
+
+               All segments and triangles are perfectly conducting
+
+
+               PRE-CONDITIONING OF THE LINEAR SET OF EQUATIONS
+
+               Selected preconditioner algorithm: 1
+
+     CPU time for preconditioning:       0.032 seconds
+
+
+                    SOLUTION OF THE LINEAR SET OF EQUATIONS WITH SCALAGAU
+
+               Condition number of the matrix:  4.09801E+03
+
+               Floating point performance for LU decomposition:
+                    Not determined since computation time too short
+
+     CPU time for solving the linear set of equations:       0.078 seconds
+
+
+                         DATA OF THE VOLTAGE SOURCE NO. 1
+
+                    real part  imag. part   magnitude       phase
+ Current   in A    2.8624E-03  9.5550E-03  9.9745E-03       73.32
+ Admitt.   in A/V  2.8624E-03  9.5550E-03  9.9745E-03       73.32
+ Impedance in Ohm  2.8770E+01 -9.6039E+01  1.0026E+02      -73.32
+ Capacitance in F  7.8914E-13
+
+                                   Power in Watt: 1.43119E-03
+
+
+                              SCATTERING PARAMETERS
+
+       ports                                        magnitude          phase 
+    sink source     real part   imag. part      linear      in dB     in deg.
+ S     1      1   4.89439E-01 -6.22489E-01   7.91861E-01   -2.0270    -51.82
+         Sum |S|^2 of these S-parameters:    6.27043E-01   -2.0270
+         Reference impedance in Ohm:  5.00000E+01
+
+
+
+
+                              SUMMARY OF LOSSES
+
+          Metallic elements:                          0.0000E+00 W
+          Dielectric:                                 0.0000E+00 W
+          Mismatch at feed:                           0.0000E+00 W
+          Non-radiating networks:                     0.0000E+00 W
+          Cables:                                     0.0000E+00 W
+          Backward power at passive waveguide ports:  0.0000E+00 W
+          Backward power at passive modal ports:      0.0000E+00 W
+                                                     -------------
+                Sum of all losses:                    0.0000E+00 W
+
+          Efficiency of the antenna:                    100.0000 %
+          (based on a total active power:             1.4312E-03 W)
+
+ read from buffer:
+NC       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+DA       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+OS       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+
+
+                              DATA FOR DIELECTRIC MEDIA
+
+internal  relative     relative  conductivity   tan(delta)    tan(delta)    wavelength   mass density    volume     medium
+index  permittivity permeability   in S/m       (electric)    (magnetic)       in m       in kg/m^3      in m^3
+    0      1.00000      1.00000  0.00000E+00   0.00000E+00   0.00000E+00   1.39438E-01   1.00000E+03    infinite    0
+
+
+
+                    EXCITATION BY VOLTAGE SOURCE AT SEGMENT
+
+ Name:                        VoltageSource1
+ Excitation index:            N = 1
+ Frequency in Hz:             FREQ =    2.15000E+09
+ Wavelength in m:             LAMBDA =  1.39438E-01
+ Open circuit voltage in V:   |U0| =    1.00000E+00
+ Phase in deg.:               ARG(U0) =        0.00
+ Source at segment label:     ULA = Union1.Wire33.Port1
+ Absolute number of segment:  UNR = 1
+ Location of the excit. in m: X =  0.00000E+00
+                              Y =  0.00000E+00
+                              Z =  0.00000E+00
+ Positive feed direction:     X =  0.00000E+00
+                              Y =  1.00000E+00
+                              Z =  0.00000E+00
+
+
+                         DATA FOR THE GREEN'S FUNCTION
+
+                                   free space
+
+
+               All segments and triangles are perfectly conducting
+
+
+               PRE-CONDITIONING OF THE LINEAR SET OF EQUATIONS
+
+               Selected preconditioner algorithm: 1
+
+     CPU time for preconditioning:       0.016 seconds
+
+
+                    SOLUTION OF THE LINEAR SET OF EQUATIONS WITH SCALAGAU
+
+               Condition number of the matrix:  4.80975E+03
+
+               Floating point performance for LU decomposition:
+                    Not determined since computation time too short
+
+     CPU time for solving the linear set of equations:       0.109 seconds
+
+
+                         DATA OF THE VOLTAGE SOURCE NO. 1
+
+                    real part  imag. part   magnitude       phase
+ Current   in A    4.3833E-03  1.1103E-02  1.1937E-02       68.46
+ Admitt.   in A/V  4.3833E-03  1.1103E-02  1.1937E-02       68.46
+ Impedance in Ohm  3.0764E+01 -7.7923E+01  8.3776E+01      -68.46
+ Capacitance in F  9.4998E-13
+
+                                   Power in Watt: 2.19165E-03
+
+
+                              SCATTERING PARAMETERS
+
+       ports                                        magnitude          phase 
+    sink source     real part   imag. part      linear      in dB     in deg.
+ S     1      1   3.58755E-01 -6.18691E-01   7.15180E-01   -2.9117    -59.89
+         Sum |S|^2 of these S-parameters:    5.11483E-01   -2.9117
+         Reference impedance in Ohm:  5.00000E+01
+
+
+
+
+                              SUMMARY OF LOSSES
+
+          Metallic elements:                          0.0000E+00 W
+          Dielectric:                                 0.0000E+00 W
+          Mismatch at feed:                           0.0000E+00 W
+          Non-radiating networks:                     0.0000E+00 W
+          Cables:                                     0.0000E+00 W
+          Backward power at passive waveguide ports:  0.0000E+00 W
+          Backward power at passive modal ports:      0.0000E+00 W
+                                                     -------------
+                Sum of all losses:                    0.0000E+00 W
+
+          Efficiency of the antenna:                    100.0000 %
+          (based on a total active power:             2.1916E-03 W)
+
+ read from buffer:
+NC       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+DA       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+OS       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+
+
+                              DATA FOR DIELECTRIC MEDIA
+
+internal  relative     relative  conductivity   tan(delta)    tan(delta)    wavelength   mass density    volume     medium
+index  permittivity permeability   in S/m       (electric)    (magnetic)       in m       in kg/m^3      in m^3
+    0      1.00000      1.00000  0.00000E+00   0.00000E+00   0.00000E+00   1.36269E-01   1.00000E+03    infinite    0
+
+
+
+                    EXCITATION BY VOLTAGE SOURCE AT SEGMENT
+
+ Name:                        VoltageSource1
+ Excitation index:            N = 1
+ Frequency in Hz:             FREQ =    2.20000E+09
+ Wavelength in m:             LAMBDA =  1.36269E-01
+ Open circuit voltage in V:   |U0| =    1.00000E+00
+ Phase in deg.:               ARG(U0) =        0.00
+ Source at segment label:     ULA = Union1.Wire33.Port1
+ Absolute number of segment:  UNR = 1
+ Location of the excit. in m: X =  0.00000E+00
+                              Y =  0.00000E+00
+                              Z =  0.00000E+00
+ Positive feed direction:     X =  0.00000E+00
+                              Y =  1.00000E+00
+                              Z =  0.00000E+00
+
+
+                         DATA FOR THE GREEN'S FUNCTION
+
+                                   free space
+
+
+               All segments and triangles are perfectly conducting
+
+
+               PRE-CONDITIONING OF THE LINEAR SET OF EQUATIONS
+
+               Selected preconditioner algorithm: 1
+
+     CPU time for preconditioning:       0.015 seconds
+
+
+                    SOLUTION OF THE LINEAR SET OF EQUATIONS WITH SCALAGAU
+
+               Condition number of the matrix:  5.75028E+03
+
+               Floating point performance for LU decomposition:
+                    Not determined since computation time too short
+
+     CPU time for solving the linear set of equations:       0.094 seconds
+
+
+                         DATA OF THE VOLTAGE SOURCE NO. 1
+
+                    real part  imag. part   magnitude       phase
+ Current   in A    6.8938E-03  1.2701E-02  1.4451E-02       61.51
+ Admitt.   in A/V  6.8938E-03  1.2701E-02  1.4451E-02       61.51
+ Impedance in Ohm  3.3012E+01 -6.0818E+01  6.9200E+01      -61.51
+ Capacitance in F  1.1895E-12
+
+                                   Power in Watt: 3.44688E-03
+
+
+                              SCATTERING PARAMETERS
+
+       ports                                        magnitude          phase 
+    sink source     real part   imag. part      linear      in dB     in deg.
+ S     1      1   2.16116E-01 -5.74311E-01   6.13628E-01   -4.2419    -69.38
+         Sum |S|^2 of these S-parameters:    3.76539E-01   -4.2419
+         Reference impedance in Ohm:  5.00000E+01
+
+
+
+
+                              SUMMARY OF LOSSES
+
+          Metallic elements:                          0.0000E+00 W
+          Dielectric:                                 0.0000E+00 W
+          Mismatch at feed:                           0.0000E+00 W
+          Non-radiating networks:                     0.0000E+00 W
+          Cables:                                     0.0000E+00 W
+          Backward power at passive waveguide ports:  0.0000E+00 W
+          Backward power at passive modal ports:      0.0000E+00 W
+                                                     -------------
+                Sum of all losses:                    0.0000E+00 W
+
+          Efficiency of the antenna:                    100.0000 %
+          (based on a total active power:             3.4469E-03 W)
+
+ read from buffer:
+NC       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+DA       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+OS       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+
+
+                              DATA FOR DIELECTRIC MEDIA
+
+internal  relative     relative  conductivity   tan(delta)    tan(delta)    wavelength   mass density    volume     medium
+index  permittivity permeability   in S/m       (electric)    (magnetic)       in m       in kg/m^3      in m^3
+    0      1.00000      1.00000  0.00000E+00   0.00000E+00   0.00000E+00   1.33241E-01   1.00000E+03    infinite    0
+
+
+
+                    EXCITATION BY VOLTAGE SOURCE AT SEGMENT
+
+ Name:                        VoltageSource1
+ Excitation index:            N = 1
+ Frequency in Hz:             FREQ =    2.25000E+09
+ Wavelength in m:             LAMBDA =  1.33241E-01
+ Open circuit voltage in V:   |U0| =    1.00000E+00
+ Phase in deg.:               ARG(U0) =        0.00
+ Source at segment label:     ULA = Union1.Wire33.Port1
+ Absolute number of segment:  UNR = 1
+ Location of the excit. in m: X =  0.00000E+00
+                              Y =  0.00000E+00
+                              Z =  0.00000E+00
+ Positive feed direction:     X =  0.00000E+00
+                              Y =  1.00000E+00
+                              Z =  0.00000E+00
+
+
+                         DATA FOR THE GREEN'S FUNCTION
+
+                                   free space
+
+
+               All segments and triangles are perfectly conducting
+
+
+               PRE-CONDITIONING OF THE LINEAR SET OF EQUATIONS
+
+               Selected preconditioner algorithm: 1
+
+     CPU time for preconditioning:       0.032 seconds
+
+
+                    SOLUTION OF THE LINEAR SET OF EQUATIONS WITH SCALAGAU
+
+               Condition number of the matrix:  6.94407E+03
+
+               Floating point performance for LU decomposition:
+                    Not determined since computation time too short
+
+     CPU time for solving the linear set of equations:       0.078 seconds
+
+
+                         DATA OF THE VOLTAGE SOURCE NO. 1
+
+                    real part  imag. part   magnitude       phase
+ Current   in A    1.0959E-02  1.3720E-02  1.7560E-02       51.38
+ Admitt.   in A/V  1.0959E-02  1.3720E-02  1.7560E-02       51.38
+ Impedance in Ohm  3.5541E+01 -4.4496E+01  5.6948E+01      -51.38
+ Capacitance in F  1.5897E-12
+
+                                   Power in Watt: 5.47960E-03
+
+
+                              SCATTERING PARAMETERS
+
+       ports                                        magnitude          phase 
+    sink source     real part   imag. part      linear      in dB     in deg.
+ S     1      1   7.99230E-02 -4.78593E-01   4.85221E-01   -6.2812    -80.52
+         Sum |S|^2 of these S-parameters:    2.35439E-01   -6.2812
+         Reference impedance in Ohm:  5.00000E+01
+
+
+
+
+                              SUMMARY OF LOSSES
+
+          Metallic elements:                          0.0000E+00 W
+          Dielectric:                                 0.0000E+00 W
+          Mismatch at feed:                           0.0000E+00 W
+          Non-radiating networks:                     0.0000E+00 W
+          Cables:                                     0.0000E+00 W
+          Backward power at passive waveguide ports:  0.0000E+00 W
+          Backward power at passive modal ports:      0.0000E+00 W
+                                                     -------------
+                Sum of all losses:                    0.0000E+00 W
+
+          Efficiency of the antenna:                    100.0000 %
+          (based on a total active power:             5.4796E-03 W)
+
+ read from buffer:
+NC       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+DA       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+OS       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+
+
+                              DATA FOR DIELECTRIC MEDIA
+
+internal  relative     relative  conductivity   tan(delta)    tan(delta)    wavelength   mass density    volume     medium
+index  permittivity permeability   in S/m       (electric)    (magnetic)       in m       in kg/m^3      in m^3
+    0      1.00000      1.00000  0.00000E+00   0.00000E+00   0.00000E+00   1.30345E-01   1.00000E+03    infinite    0
+
+
+
+                    EXCITATION BY VOLTAGE SOURCE AT SEGMENT
+
+ Name:                        VoltageSource1
+ Excitation index:            N = 1
+ Frequency in Hz:             FREQ =    2.30000E+09
+ Wavelength in m:             LAMBDA =  1.30345E-01
+ Open circuit voltage in V:   |U0| =    1.00000E+00
+ Phase in deg.:               ARG(U0) =        0.00
+ Source at segment label:     ULA = Union1.Wire33.Port1
+ Absolute number of segment:  UNR = 1
+ Location of the excit. in m: X =  0.00000E+00
+                              Y =  0.00000E+00
+                              Z =  0.00000E+00
+ Positive feed direction:     X =  0.00000E+00
+                              Y =  1.00000E+00
+                              Z =  0.00000E+00
+
+
+                         DATA FOR THE GREEN'S FUNCTION
+
+                                   free space
+
+
+               All segments and triangles are perfectly conducting
+
+
+               PRE-CONDITIONING OF THE LINEAR SET OF EQUATIONS
+
+               Selected preconditioner algorithm: 1
+
+     CPU time for preconditioning:       0.016 seconds
+
+
+                    SOLUTION OF THE LINEAR SET OF EQUATIONS WITH SCALAGAU
+
+               Condition number of the matrix:  8.23993E+03
+
+               Floating point performance for LU decomposition:
+                    Not determined since computation time too short
+
+     CPU time for solving the linear set of equations:       0.078 seconds
+
+
+                         DATA OF THE VOLTAGE SOURCE NO. 1
+
+                    real part  imag. part   magnitude       phase
+ Current   in A    1.6685E-02  1.2496E-02  2.0845E-02       36.83
+ Admitt.   in A/V  1.6685E-02  1.2496E-02  2.0845E-02       36.83
+ Impedance in Ohm  3.8398E+01 -2.8757E+01  4.7972E+01      -36.83
+ Capacitance in F  2.4063E-12
+
+                                   Power in Watt: 8.34239E-03
+
+
+                              SCATTERING PARAMETERS
+
+       ports                                        magnitude          phase 
+    sink source     real part   imag. part      linear      in dB     in deg.
+ S     1      1  -2.29881E-02 -3.32795E-01   3.33588E-01   -9.5358    -93.95
+         Sum |S|^2 of these S-parameters:    1.11281E-01   -9.5358
+         Reference impedance in Ohm:  5.00000E+01
+
+
+
+
+                              SUMMARY OF LOSSES
+
+          Metallic elements:                          0.0000E+00 W
+          Dielectric:                                 0.0000E+00 W
+          Mismatch at feed:                           0.0000E+00 W
+          Non-radiating networks:                     0.0000E+00 W
+          Cables:                                     0.0000E+00 W
+          Backward power at passive waveguide ports:  0.0000E+00 W
+          Backward power at passive modal ports:      0.0000E+00 W
+                                                     -------------
+                Sum of all losses:                    0.0000E+00 W
+
+          Efficiency of the antenna:                    100.0000 %
+          (based on a total active power:             8.3424E-03 W)
+
+ read from buffer:
+NC       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+DA       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+OS       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+
+
+                              DATA FOR DIELECTRIC MEDIA
+
+internal  relative     relative  conductivity   tan(delta)    tan(delta)    wavelength   mass density    volume     medium
+index  permittivity permeability   in S/m       (electric)    (magnetic)       in m       in kg/m^3      in m^3
+    0      1.00000      1.00000  0.00000E+00   0.00000E+00   0.00000E+00   1.27571E-01   1.00000E+03    infinite    0
+
+
+
+                    EXCITATION BY VOLTAGE SOURCE AT SEGMENT
+
+ Name:                        VoltageSource1
+ Excitation index:            N = 1
+ Frequency in Hz:             FREQ =    2.35000E+09
+ Wavelength in m:             LAMBDA =  1.27571E-01
+ Open circuit voltage in V:   |U0| =    1.00000E+00
+ Phase in deg.:               ARG(U0) =        0.00
+ Source at segment label:     ULA = Union1.Wire33.Port1
+ Absolute number of segment:  UNR = 1
+ Location of the excit. in m: X =  0.00000E+00
+                              Y =  0.00000E+00
+                              Z =  0.00000E+00
+ Positive feed direction:     X =  0.00000E+00
+                              Y =  1.00000E+00
+                              Z =  0.00000E+00
+
+
+                         DATA FOR THE GREEN'S FUNCTION
+
+                                   free space
+
+
+               All segments and triangles are perfectly conducting
+
+
+               PRE-CONDITIONING OF THE LINEAR SET OF EQUATIONS
+
+               Selected preconditioner algorithm: 1
+
+     CPU time for preconditioning:       0.015 seconds
+
+
+                    SOLUTION OF THE LINEAR SET OF EQUATIONS WITH SCALAGAU
+
+               Condition number of the matrix:  9.07540E+03
+
+               Floating point performance for LU decomposition:
+                    Not determined since computation time too short
+
+     CPU time for solving the linear set of equations:       0.094 seconds
+
+
+                         DATA OF THE VOLTAGE SOURCE NO. 1
+
+                    real part  imag. part   magnitude       phase
+ Current   in A    2.1747E-02  7.0155E-03  2.2851E-02       17.88
+ Admitt.   in A/V  2.1747E-02  7.0155E-03  2.2851E-02       17.88
+ Impedance in Ohm  4.1649E+01 -1.3436E+01  4.3762E+01      -17.88
+ Capacitance in F  5.0408E-12
+
+                                   Power in Watt: 1.08736E-02
+
+
+                              SCATTERING PARAMETERS
+
+       ports                                        magnitude          phase 
+    sink source     real part   imag. part      linear      in dB     in deg.
+ S     1      1  -6.81675E-02 -1.56592E-01   1.70786E-01  -15.3509   -113.52
+         Sum |S|^2 of these S-parameters:    2.91679E-02  -15.3509
+         Reference impedance in Ohm:  5.00000E+01
+
+
+
+
+                              SUMMARY OF LOSSES
+
+          Metallic elements:                          0.0000E+00 W
+          Dielectric:                                 0.0000E+00 W
+          Mismatch at feed:                           0.0000E+00 W
+          Non-radiating networks:                     0.0000E+00 W
+          Cables:                                     0.0000E+00 W
+          Backward power at passive waveguide ports:  0.0000E+00 W
+          Backward power at passive modal ports:      0.0000E+00 W
+                                                     -------------
+                Sum of all losses:                    0.0000E+00 W
+
+          Efficiency of the antenna:                    100.0000 %
+          (based on a total active power:             1.0874E-02 W)
+
+ read from buffer:
+NC       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+DA       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+OS       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+
+
+                              DATA FOR DIELECTRIC MEDIA
+
+internal  relative     relative  conductivity   tan(delta)    tan(delta)    wavelength   mass density    volume     medium
+index  permittivity permeability   in S/m       (electric)    (magnetic)       in m       in kg/m^3      in m^3
+    0      1.00000      1.00000  0.00000E+00   0.00000E+00   0.00000E+00   1.24914E-01   1.00000E+03    infinite    0
+
+
+
+                    EXCITATION BY VOLTAGE SOURCE AT SEGMENT
+
+ Name:                        VoltageSource1
+ Excitation index:            N = 1
+ Frequency in Hz:             FREQ =    2.40000E+09
+ Wavelength in m:             LAMBDA =  1.24914E-01
+ Open circuit voltage in V:   |U0| =    1.00000E+00
+ Phase in deg.:               ARG(U0) =        0.00
+ Source at segment label:     ULA = Union1.Wire33.Port1
+ Absolute number of segment:  UNR = 1
+ Location of the excit. in m: X =  0.00000E+00
+                              Y =  0.00000E+00
+                              Z =  0.00000E+00
+ Positive feed direction:     X =  0.00000E+00
+                              Y =  1.00000E+00
+                              Z =  0.00000E+00
+
+
+                         DATA FOR THE GREEN'S FUNCTION
+
+                                   free space
+
+
+               All segments and triangles are perfectly conducting
+
+
+               PRE-CONDITIONING OF THE LINEAR SET OF EQUATIONS
+
+               Selected preconditioner algorithm: 1
+
+     CPU time for preconditioning:       0.016 seconds
+
+
+                    SOLUTION OF THE LINEAR SET OF EQUATIONS WITH SCALAGAU
+
+               Condition number of the matrix:  8.82397E+03
+
+               Floating point performance for LU decomposition:
+                    Not determined since computation time too short
+
+     CPU time for solving the linear set of equations:       0.093 seconds
+
+
+                         DATA OF THE VOLTAGE SOURCE NO. 1
+
+                    real part  imag. part   magnitude       phase
+ Current   in A    2.2003E-02 -7.7871E-04  2.2017E-02       -2.03
+ Admitt.   in A/V  2.2003E-02 -7.7871E-04  2.2017E-02       -2.03
+ Impedance in Ohm  4.5391E+01  1.6064E+00  4.5419E+01        2.03
+ Inductance  in H  1.0653E-10
+
+                                   Power in Watt: 1.10017E-02
+
+
+                              SCATTERING PARAMETERS
+
+       ports                                        magnitude          phase 
+    sink source     real part   imag. part      linear      in dB     in deg.
+ S     1      1  -4.80236E-02  1.76490E-02   5.11640E-02  -25.8207    159.82
+         Sum |S|^2 of these S-parameters:    2.61775E-03  -25.8207
+         Reference impedance in Ohm:  5.00000E+01
+
+
+
+
+                              SUMMARY OF LOSSES
+
+          Metallic elements:                          0.0000E+00 W
+          Dielectric:                                 0.0000E+00 W
+          Mismatch at feed:                           0.0000E+00 W
+          Non-radiating networks:                     0.0000E+00 W
+          Cables:                                     0.0000E+00 W
+          Backward power at passive waveguide ports:  0.0000E+00 W
+          Backward power at passive modal ports:      0.0000E+00 W
+                                                     -------------
+                Sum of all losses:                    0.0000E+00 W
+
+          Efficiency of the antenna:                    100.0000 %
+          (based on a total active power:             1.1002E-02 W)
+
+ read from buffer:
+NC       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+DA       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+OS       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+
+
+                              DATA FOR DIELECTRIC MEDIA
+
+internal  relative     relative  conductivity   tan(delta)    tan(delta)    wavelength   mass density    volume     medium
+index  permittivity permeability   in S/m       (electric)    (magnetic)       in m       in kg/m^3      in m^3
+    0      1.00000      1.00000  0.00000E+00   0.00000E+00   0.00000E+00   1.22364E-01   1.00000E+03    infinite    0
+
+
+
+                    EXCITATION BY VOLTAGE SOURCE AT SEGMENT
+
+ Name:                        VoltageSource1
+ Excitation index:            N = 1
+ Frequency in Hz:             FREQ =    2.45000E+09
+ Wavelength in m:             LAMBDA =  1.22364E-01
+ Open circuit voltage in V:   |U0| =    1.00000E+00
+ Phase in deg.:               ARG(U0) =        0.00
+ Source at segment label:     ULA = Union1.Wire33.Port1
+ Absolute number of segment:  UNR = 1
+ Location of the excit. in m: X =  0.00000E+00
+                              Y =  0.00000E+00
+                              Z =  0.00000E+00
+ Positive feed direction:     X =  0.00000E+00
+                              Y =  1.00000E+00
+                              Z =  0.00000E+00
+
+
+                         DATA FOR THE GREEN'S FUNCTION
+
+                                   free space
+
+
+               All segments and triangles are perfectly conducting
+
+
+               PRE-CONDITIONING OF THE LINEAR SET OF EQUATIONS
+
+               Selected preconditioner algorithm: 1
+
+     CPU time for preconditioning:       0.016 seconds
+
+
+                    SOLUTION OF THE LINEAR SET OF EQUATIONS WITH SCALAGAU
+
+               Condition number of the matrix:  7.74610E+03
+
+               Floating point performance for LU decomposition:
+                    Not determined since computation time too short
+
+     CPU time for solving the linear set of equations:       0.093 seconds
+
+
+                         DATA OF THE VOLTAGE SOURCE NO. 1
+
+                    real part  imag. part   magnitude       phase
+ Current   in A    1.8118E-02 -5.9962E-03  1.9085E-02      -18.31
+ Admitt.   in A/V  1.8118E-02 -5.9962E-03  1.9085E-02      -18.31
+ Impedance in Ohm  4.9744E+01  1.6462E+01  5.2398E+01       18.31
+ Inductance  in H  1.0694E-09
+
+                                   Power in Watt: 9.05922E-03
+
+
+                              SCATTERING PARAMETERS
+
+       ports                                        magnitude          phase 
+    sink source     real part   imag. part      linear      in dB     in deg.
+ S     1      1   2.40219E-02  1.61082E-01   1.62864E-01  -15.7635     81.52
+         Sum |S|^2 of these S-parameters:    2.65245E-02  -15.7635
+         Reference impedance in Ohm:  5.00000E+01
+
+
+
+
+                              SUMMARY OF LOSSES
+
+          Metallic elements:                          0.0000E+00 W
+          Dielectric:                                 0.0000E+00 W
+          Mismatch at feed:                           0.0000E+00 W
+          Non-radiating networks:                     0.0000E+00 W
+          Cables:                                     0.0000E+00 W
+          Backward power at passive waveguide ports:  0.0000E+00 W
+          Backward power at passive modal ports:      0.0000E+00 W
+                                                     -------------
+                Sum of all losses:                    0.0000E+00 W
+
+          Efficiency of the antenna:                    100.0000 %
+          (based on a total active power:             9.0592E-03 W)
+
+ read from buffer:
+NC       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+DA       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+OS       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+
+
+                              DATA FOR DIELECTRIC MEDIA
+
+internal  relative     relative  conductivity   tan(delta)    tan(delta)    wavelength   mass density    volume     medium
+index  permittivity permeability   in S/m       (electric)    (magnetic)       in m       in kg/m^3      in m^3
+    0      1.00000      1.00000  0.00000E+00   0.00000E+00   0.00000E+00   1.19917E-01   1.00000E+03    infinite    0
+
+
+
+                    EXCITATION BY VOLTAGE SOURCE AT SEGMENT
+
+ Name:                        VoltageSource1
+ Excitation index:            N = 1
+ Frequency in Hz:             FREQ =    2.50000E+09
+ Wavelength in m:             LAMBDA =  1.19917E-01
+ Open circuit voltage in V:   |U0| =    1.00000E+00
+ Phase in deg.:               ARG(U0) =        0.00
+ Source at segment label:     ULA = Union1.Wire33.Port1
+ Absolute number of segment:  UNR = 1
+ Location of the excit. in m: X =  0.00000E+00
+                              Y =  0.00000E+00
+                              Z =  0.00000E+00
+ Positive feed direction:     X =  0.00000E+00
+                              Y =  1.00000E+00
+                              Z =  0.00000E+00
+
+
+                         DATA FOR THE GREEN'S FUNCTION
+
+                                   free space
+
+
+               All segments and triangles are perfectly conducting
+
+
+               PRE-CONDITIONING OF THE LINEAR SET OF EQUATIONS
+
+               Selected preconditioner algorithm: 1
+
+     CPU time for preconditioning:       0.016 seconds
+
+
+                    SOLUTION OF THE LINEAR SET OF EQUATIONS WITH SCALAGAU
+
+               Condition number of the matrix:  6.53528E+03
+
+               Floating point performance for LU decomposition:
+                    Not determined since computation time too short
+
+     CPU time for solving the linear set of equations:       0.093 seconds
+
+
+                         DATA OF THE VOLTAGE SOURCE NO. 1
+
+                    real part  imag. part   magnitude       phase
+ Current   in A    1.3782E-02 -7.8352E-03  1.5853E-02      -29.62
+ Admitt.   in A/V  1.3782E-02 -7.8352E-03  1.5853E-02      -29.62
+ Impedance in Ohm  5.4836E+01  3.1176E+01  6.3079E+01       29.62
+ Inductance  in H  1.9847E-09
+
+                                   Power in Watt: 6.89078E-03
+
+
+                              SCATTERING PARAMETERS
+
+       ports                                        magnitude          phase 
+    sink source     real part   imag. part      linear      in dB     in deg.
+ S     1      1   1.23633E-01  2.60611E-01   2.88450E-01  -10.7986     64.62
+         Sum |S|^2 of these S-parameters:    8.32031E-02  -10.7986
+         Reference impedance in Ohm:  5.00000E+01
+
+
+
+
+                              SUMMARY OF LOSSES
+
+          Metallic elements:                          0.0000E+00 W
+          Dielectric:                                 0.0000E+00 W
+          Mismatch at feed:                           0.0000E+00 W
+          Non-radiating networks:                     0.0000E+00 W
+          Cables:                                     0.0000E+00 W
+          Backward power at passive waveguide ports:  0.0000E+00 W
+          Backward power at passive modal ports:      0.0000E+00 W
+                                                     -------------
+                Sum of all losses:                    0.0000E+00 W
+
+          Efficiency of the antenna:                    100.0000 %
+          (based on a total active power:             6.8908E-03 W)
+
+ read from buffer:
+NC       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+DA       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+OS       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+
+
+                              DATA FOR DIELECTRIC MEDIA
+
+internal  relative     relative  conductivity   tan(delta)    tan(delta)    wavelength   mass density    volume     medium
+index  permittivity permeability   in S/m       (electric)    (magnetic)       in m       in kg/m^3      in m^3
+    0      1.00000      1.00000  0.00000E+00   0.00000E+00   0.00000E+00   1.17566E-01   1.00000E+03    infinite    0
+
+
+
+                    EXCITATION BY VOLTAGE SOURCE AT SEGMENT
+
+ Name:                        VoltageSource1
+ Excitation index:            N = 1
+ Frequency in Hz:             FREQ =    2.55000E+09
+ Wavelength in m:             LAMBDA =  1.17566E-01
+ Open circuit voltage in V:   |U0| =    1.00000E+00
+ Phase in deg.:               ARG(U0) =        0.00
+ Source at segment label:     ULA = Union1.Wire33.Port1
+ Absolute number of segment:  UNR = 1
+ Location of the excit. in m: X =  0.00000E+00
+                              Y =  0.00000E+00
+                              Z =  0.00000E+00
+ Positive feed direction:     X =  0.00000E+00
+                              Y =  1.00000E+00
+                              Z =  0.00000E+00
+
+
+                         DATA FOR THE GREEN'S FUNCTION
+
+                                   free space
+
+
+               All segments and triangles are perfectly conducting
+
+
+               PRE-CONDITIONING OF THE LINEAR SET OF EQUATIONS
+
+               Selected preconditioner algorithm: 1
+
+     CPU time for preconditioning:       0.016 seconds
+
+
+                    SOLUTION OF THE LINEAR SET OF EQUATIONS WITH SCALAGAU
+
+               Condition number of the matrix:  4.12915E+03
+
+               Floating point performance for LU decomposition:
+                    Not determined since computation time too short
+
+     CPU time for solving the linear set of equations:       0.093 seconds
+
+
+                         DATA OF THE VOLTAGE SOURCE NO. 1
+
+                    real part  imag. part   magnitude       phase
+ Current   in A    1.0502E-02 -7.9053E-03  1.3145E-02      -36.97
+ Admitt.   in A/V  1.0502E-02 -7.9053E-03  1.3145E-02      -36.97
+ Impedance in Ohm  6.0780E+01  4.5750E+01  7.6074E+01       36.97
+ Inductance  in H  2.8555E-09
+
+                                   Power in Watt: 5.25115E-03
+
+
+                              SCATTERING PARAMETERS
+
+       ports                                        magnitude          phase 
+    sink source     real part   imag. part      linear      in dB     in deg.
+ S     1      1   2.28836E-01  3.18479E-01   3.92167E-01   -8.1306     54.30
+         Sum |S|^2 of these S-parameters:    1.53795E-01   -8.1306
+         Reference impedance in Ohm:  5.00000E+01
+
+
+
+
+                              SUMMARY OF LOSSES
+
+          Metallic elements:                          0.0000E+00 W
+          Dielectric:                                 0.0000E+00 W
+          Mismatch at feed:                           0.0000E+00 W
+          Non-radiating networks:                     0.0000E+00 W
+          Cables:                                     0.0000E+00 W
+          Backward power at passive waveguide ports:  0.0000E+00 W
+          Backward power at passive modal ports:      0.0000E+00 W
+                                                     -------------
+                Sum of all losses:                    0.0000E+00 W
+
+          Efficiency of the antenna:                    100.0000 %
+          (based on a total active power:             5.2512E-03 W)
+
+ read from buffer:
+NC       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+DA       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+OS       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+
+
+                              DATA FOR DIELECTRIC MEDIA
+
+internal  relative     relative  conductivity   tan(delta)    tan(delta)    wavelength   mass density    volume     medium
+index  permittivity permeability   in S/m       (electric)    (magnetic)       in m       in kg/m^3      in m^3
+    0      1.00000      1.00000  0.00000E+00   0.00000E+00   0.00000E+00   1.15305E-01   1.00000E+03    infinite    0
+
+
+
+                    EXCITATION BY VOLTAGE SOURCE AT SEGMENT
+
+ Name:                        VoltageSource1
+ Excitation index:            N = 1
+ Frequency in Hz:             FREQ =    2.60000E+09
+ Wavelength in m:             LAMBDA =  1.15305E-01
+ Open circuit voltage in V:   |U0| =    1.00000E+00
+ Phase in deg.:               ARG(U0) =        0.00
+ Source at segment label:     ULA = Union1.Wire33.Port1
+ Absolute number of segment:  UNR = 1
+ Location of the excit. in m: X =  0.00000E+00
+                              Y =  0.00000E+00
+                              Z =  0.00000E+00
+ Positive feed direction:     X =  0.00000E+00
+                              Y =  1.00000E+00
+                              Z =  0.00000E+00
+
+
+                         DATA FOR THE GREEN'S FUNCTION
+
+                                   free space
+
+
+               All segments and triangles are perfectly conducting
+
+
+               PRE-CONDITIONING OF THE LINEAR SET OF EQUATIONS
+
+               Selected preconditioner algorithm: 1
+
+     CPU time for preconditioning:       0.016 seconds
+
+
+                    SOLUTION OF THE LINEAR SET OF EQUATIONS WITH SCALAGAU
+
+               Condition number of the matrix:  5.81342E+03
+
+               Floating point performance for LU decomposition:
+                    Not determined since computation time too short
+
+     CPU time for solving the linear set of equations:       0.093 seconds
+
+
+                         DATA OF THE VOLTAGE SOURCE NO. 1
+
+                    real part  imag. part   magnitude       phase
+ Current   in A    8.2521E-03 -7.3386E-03  1.1043E-02      -41.65
+ Admitt.   in A/V  8.2521E-03 -7.3386E-03  1.1043E-02      -41.65
+ Impedance in Ohm  6.7667E+01  6.0176E+01  9.0554E+01       41.65
+ Inductance  in H  3.6836E-09
+
+                                   Power in Watt: 4.12604E-03
+
+
+                              SCATTERING PARAMETERS
+
+       ports                                        magnitude          phase 
+    sink source     real part   imag. part      linear      in dB     in deg.
+ S     1      1   3.26334E-01  3.44522E-01   4.74541E-01   -6.4745     46.55
+         Sum |S|^2 of these S-parameters:    2.25189E-01   -6.4745
+         Reference impedance in Ohm:  5.00000E+01
+
+
+
+
+                              SUMMARY OF LOSSES
+
+          Metallic elements:                          0.0000E+00 W
+          Dielectric:                                 0.0000E+00 W
+          Mismatch at feed:                           0.0000E+00 W
+          Non-radiating networks:                     0.0000E+00 W
+          Cables:                                     0.0000E+00 W
+          Backward power at passive waveguide ports:  0.0000E+00 W
+          Backward power at passive modal ports:      0.0000E+00 W
+                                                     -------------
+                Sum of all losses:                    0.0000E+00 W
+
+          Efficiency of the antenna:                    100.0000 %
+          (based on a total active power:             4.1260E-03 W)
+
+ read from buffer:
+NC       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+DA       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+OS       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+
+
+                              DATA FOR DIELECTRIC MEDIA
+
+internal  relative     relative  conductivity   tan(delta)    tan(delta)    wavelength   mass density    volume     medium
+index  permittivity permeability   in S/m       (electric)    (magnetic)       in m       in kg/m^3      in m^3
+    0      1.00000      1.00000  0.00000E+00   0.00000E+00   0.00000E+00   1.13129E-01   1.00000E+03    infinite    0
+
+
+
+                    EXCITATION BY VOLTAGE SOURCE AT SEGMENT
+
+ Name:                        VoltageSource1
+ Excitation index:            N = 1
+ Frequency in Hz:             FREQ =    2.65000E+09
+ Wavelength in m:             LAMBDA =  1.13129E-01
+ Open circuit voltage in V:   |U0| =    1.00000E+00
+ Phase in deg.:               ARG(U0) =        0.00
+ Source at segment label:     ULA = Union1.Wire33.Port1
+ Absolute number of segment:  UNR = 1
+ Location of the excit. in m: X =  0.00000E+00
+                              Y =  0.00000E+00
+                              Z =  0.00000E+00
+ Positive feed direction:     X =  0.00000E+00
+                              Y =  1.00000E+00
+                              Z =  0.00000E+00
+
+
+                         DATA FOR THE GREEN'S FUNCTION
+
+                                   free space
+
+
+               All segments and triangles are perfectly conducting
+
+
+               PRE-CONDITIONING OF THE LINEAR SET OF EQUATIONS
+
+               Selected preconditioner algorithm: 1
+
+     CPU time for preconditioning:       0.015 seconds
+
+
+                    SOLUTION OF THE LINEAR SET OF EQUATIONS WITH SCALAGAU
+
+               Condition number of the matrix:  7.56135E+03
+
+               Floating point performance for LU decomposition:
+                    Not determined since computation time too short
+
+     CPU time for solving the linear set of equations:       0.094 seconds
+
+
+                         DATA OF THE VOLTAGE SOURCE NO. 1
+
+                    real part  imag. part   magnitude       phase
+ Current   in A    6.7152E-03 -6.6144E-03  9.4257E-03      -44.57
+ Admitt.   in A/V  6.7152E-03 -6.6144E-03  9.4257E-03      -44.57
+ Impedance in Ohm  7.5584E+01  7.4450E+01  1.0609E+02       44.57
+ Inductance  in H  4.4713E-09
+
+                                   Power in Watt: 3.35758E-03
+
+
+                              SCATTERING PARAMETERS
+
+       ports                                        magnitude          phase 
+    sink source     real part   imag. part      linear      in dB     in deg.
+ S     1      1   4.10796E-01  3.49296E-01   5.39223E-01   -5.3646     40.37
+         Sum |S|^2 of these S-parameters:    2.90761E-01   -5.3646
+         Reference impedance in Ohm:  5.00000E+01
+
+
+
+
+                              SUMMARY OF LOSSES
+
+          Metallic elements:                          0.0000E+00 W
+          Dielectric:                                 0.0000E+00 W
+          Mismatch at feed:                           0.0000E+00 W
+          Non-radiating networks:                     0.0000E+00 W
+          Cables:                                     0.0000E+00 W
+          Backward power at passive waveguide ports:  0.0000E+00 W
+          Backward power at passive modal ports:      0.0000E+00 W
+                                                     -------------
+                Sum of all losses:                    0.0000E+00 W
+
+          Efficiency of the antenna:                    100.0000 %
+          (based on a total active power:             3.3576E-03 W)
+
+ read from buffer:
+NC       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+DA       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+OS       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+
+
+                              DATA FOR DIELECTRIC MEDIA
+
+internal  relative     relative  conductivity   tan(delta)    tan(delta)    wavelength   mass density    volume     medium
+index  permittivity permeability   in S/m       (electric)    (magnetic)       in m       in kg/m^3      in m^3
+    0      1.00000      1.00000  0.00000E+00   0.00000E+00   0.00000E+00   1.11034E-01   1.00000E+03    infinite    0
+
+
+
+                    EXCITATION BY VOLTAGE SOURCE AT SEGMENT
+
+ Name:                        VoltageSource1
+ Excitation index:            N = 1
+ Frequency in Hz:             FREQ =    2.70000E+09
+ Wavelength in m:             LAMBDA =  1.11034E-01
+ Open circuit voltage in V:   |U0| =    1.00000E+00
+ Phase in deg.:               ARG(U0) =        0.00
+ Source at segment label:     ULA = Union1.Wire33.Port1
+ Absolute number of segment:  UNR = 1
+ Location of the excit. in m: X =  0.00000E+00
+                              Y =  0.00000E+00
+                              Z =  0.00000E+00
+ Positive feed direction:     X =  0.00000E+00
+                              Y =  1.00000E+00
+                              Z =  0.00000E+00
+
+
+                         DATA FOR THE GREEN'S FUNCTION
+
+                                   free space
+
+
+               All segments and triangles are perfectly conducting
+
+
+               PRE-CONDITIONING OF THE LINEAR SET OF EQUATIONS
+
+               Selected preconditioner algorithm: 1
+
+     CPU time for preconditioning:       0.031 seconds
+
+
+                    SOLUTION OF THE LINEAR SET OF EQUATIONS WITH SCALAGAU
+
+               Condition number of the matrix:  6.37585E+03
+
+               Floating point performance for LU decomposition:
+                    Not determined since computation time too short
+
+     CPU time for solving the linear set of equations:       0.078 seconds
+
+
+                         DATA OF THE VOLTAGE SOURCE NO. 1
+
+                    real part  imag. part   magnitude       phase
+ Current   in A    5.6389E-03 -5.9012E-03  8.1622E-03      -46.30
+ Admitt.   in A/V  5.6389E-03 -5.9012E-03  8.1622E-03      -46.30
+ Impedance in Ohm  8.4641E+01  8.8578E+01  1.2252E+02       46.30
+ Inductance  in H  5.2213E-09
+
+                                   Power in Watt: 2.81946E-03
+
+
+                              SCATTERING PARAMETERS
+
+       ports                                        magnitude          phase 
+    sink source     real part   imag. part      linear      in dB     in deg.
+ S     1      1   4.81637E-01  3.41021E-01   5.90144E-01   -4.5808     35.30
+         Sum |S|^2 of these S-parameters:    3.48270E-01   -4.5808
+         Reference impedance in Ohm:  5.00000E+01
+
+
+
+
+                              SUMMARY OF LOSSES
+
+          Metallic elements:                          0.0000E+00 W
+          Dielectric:                                 0.0000E+00 W
+          Mismatch at feed:                           0.0000E+00 W
+          Non-radiating networks:                     0.0000E+00 W
+          Cables:                                     0.0000E+00 W
+          Backward power at passive waveguide ports:  0.0000E+00 W
+          Backward power at passive modal ports:      0.0000E+00 W
+                                                     -------------
+                Sum of all losses:                    0.0000E+00 W
+
+          Efficiency of the antenna:                    100.0000 %
+          (based on a total active power:             2.8195E-03 W)
+
+ read from buffer:
+NC       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+DA       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+OS       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+
+
+                              DATA FOR DIELECTRIC MEDIA
+
+internal  relative     relative  conductivity   tan(delta)    tan(delta)    wavelength   mass density    volume     medium
+index  permittivity permeability   in S/m       (electric)    (magnetic)       in m       in kg/m^3      in m^3
+    0      1.00000      1.00000  0.00000E+00   0.00000E+00   0.00000E+00   1.09015E-01   1.00000E+03    infinite    0
+
+
+
+                    EXCITATION BY VOLTAGE SOURCE AT SEGMENT
+
+ Name:                        VoltageSource1
+ Excitation index:            N = 1
+ Frequency in Hz:             FREQ =    2.75000E+09
+ Wavelength in m:             LAMBDA =  1.09015E-01
+ Open circuit voltage in V:   |U0| =    1.00000E+00
+ Phase in deg.:               ARG(U0) =        0.00
+ Source at segment label:     ULA = Union1.Wire33.Port1
+ Absolute number of segment:  UNR = 1
+ Location of the excit. in m: X =  0.00000E+00
+                              Y =  0.00000E+00
+                              Z =  0.00000E+00
+ Positive feed direction:     X =  0.00000E+00
+                              Y =  1.00000E+00
+                              Z =  0.00000E+00
+
+
+                         DATA FOR THE GREEN'S FUNCTION
+
+                                   free space
+
+
+               All segments and triangles are perfectly conducting
+
+
+               PRE-CONDITIONING OF THE LINEAR SET OF EQUATIONS
+
+               Selected preconditioner algorithm: 1
+
+     CPU time for preconditioning:       0.016 seconds
+
+
+                    SOLUTION OF THE LINEAR SET OF EQUATIONS WITH SCALAGAU
+
+               Condition number of the matrix:  6.53513E+03
+
+               Floating point performance for LU decomposition:
+                    Not determined since computation time too short
+
+     CPU time for solving the linear set of equations:       0.093 seconds
+
+
+                         DATA OF THE VOLTAGE SOURCE NO. 1
+
+                    real part  imag. part   magnitude       phase
+ Current   in A    4.8608E-03 -5.2484E-03  7.1535E-03      -47.20
+ Admitt.   in A/V  4.8608E-03 -5.2484E-03  7.1535E-03      -47.20
+ Impedance in Ohm  9.4988E+01  1.0256E+02  1.3979E+02       47.20
+ Inductance  in H  5.9357E-09
+
+                                   Power in Watt: 2.43042E-03
+
+
+                              SCATTERING PARAMETERS
+
+       ports                                        magnitude          phase 
+    sink source     real part   imag. part      linear      in dB     in deg.
+ S     1      1   5.40309E-01  3.25174E-01   6.30612E-01   -4.0048     31.04
+         Sum |S|^2 of these S-parameters:    3.97672E-01   -4.0048
+         Reference impedance in Ohm:  5.00000E+01
+
+
+
+
+                              SUMMARY OF LOSSES
+
+          Metallic elements:                          0.0000E+00 W
+          Dielectric:                                 0.0000E+00 W
+          Mismatch at feed:                           0.0000E+00 W
+          Non-radiating networks:                     0.0000E+00 W
+          Cables:                                     0.0000E+00 W
+          Backward power at passive waveguide ports:  0.0000E+00 W
+          Backward power at passive modal ports:      0.0000E+00 W
+                                                     -------------
+                Sum of all losses:                    0.0000E+00 W
+
+          Efficiency of the antenna:                    100.0000 %
+          (based on a total active power:             2.4304E-03 W)
+
+ read from buffer:
+NC       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+DA       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from buffer:
+OS       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+
+
+                              DATA FOR DIELECTRIC MEDIA
+
+internal  relative     relative  conductivity   tan(delta)    tan(delta)    wavelength   mass density    volume     medium
+index  permittivity permeability   in S/m       (electric)    (magnetic)       in m       in kg/m^3      in m^3
+    0      1.00000      1.00000  0.00000E+00   0.00000E+00   0.00000E+00   1.07069E-01   1.00000E+03    infinite    0
+
+
+
+                    EXCITATION BY VOLTAGE SOURCE AT SEGMENT
+
+ Name:                        VoltageSource1
+ Excitation index:            N = 1
+ Frequency in Hz:             FREQ =    2.80000E+09
+ Wavelength in m:             LAMBDA =  1.07069E-01
+ Open circuit voltage in V:   |U0| =    1.00000E+00
+ Phase in deg.:               ARG(U0) =        0.00
+ Source at segment label:     ULA = Union1.Wire33.Port1
+ Absolute number of segment:  UNR = 1
+ Location of the excit. in m: X =  0.00000E+00
+                              Y =  0.00000E+00
+                              Z =  0.00000E+00
+ Positive feed direction:     X =  0.00000E+00
+                              Y =  1.00000E+00
+                              Z =  0.00000E+00
+
+
+                         DATA FOR THE GREEN'S FUNCTION
+
+                                   free space
+
+
+               All segments and triangles are perfectly conducting
+
+
+               PRE-CONDITIONING OF THE LINEAR SET OF EQUATIONS
+
+               Selected preconditioner algorithm: 1
+
+     CPU time for preconditioning:       0.016 seconds
+
+
+                    SOLUTION OF THE LINEAR SET OF EQUATIONS WITH SCALAGAU
+
+               Condition number of the matrix:  4.96125E+03
+
+               Floating point performance for LU decomposition:
+                    Not determined since computation time too short
+
+     CPU time for solving the linear set of equations:       0.094 seconds
+
+
+                         DATA OF THE VOLTAGE SOURCE NO. 1
+
+                    real part  imag. part   magnitude       phase
+ Current   in A    4.2807E-03 -4.6632E-03  6.3301E-03      -47.45
+ Admitt.   in A/V  4.2807E-03 -4.6632E-03  6.3301E-03      -47.45
+ Impedance in Ohm  1.0683E+02  1.1638E+02  1.5798E+02       47.45
+ Inductance  in H  6.6150E-09
+
+                                   Power in Watt: 2.14036E-03
+
+
+                              SCATTERING PARAMETERS
+
+       ports                                        magnitude          phase 
+    sink source     real part   imag. part      linear      in dB     in deg.
+ S     1      1   5.88796E-01  3.05133E-01   6.63165E-01   -3.5676     27.39
+         Sum |S|^2 of these S-parameters:    4.39787E-01   -3.5676
+         Reference impedance in Ohm:  5.00000E+01
+
+
+
+
+                              SUMMARY OF LOSSES
+
+          Metallic elements:                          0.0000E+00 W
+          Dielectric:                                 0.0000E+00 W
+          Mismatch at feed:                           0.0000E+00 W
+          Non-radiating networks:                     0.0000E+00 W
+          Cables:                                     0.0000E+00 W
+          Backward power at passive waveguide ports:  0.0000E+00 W
+          Backward power at passive modal ports:      0.0000E+00 W
+                                                     -------------
+                Sum of all losses:                    0.0000E+00 W
+
+          Efficiency of the antenna:                    100.0000 %
+          (based on a total active power:             2.1404E-03 W)
+
+ read from buffer:
+EN       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+
+
+                    SUMMARY OF REQUIRED TIMES IN SECONDS
+
+                                            CPU-time      runtime
+ Reading and constructing the geometry         0.063        0.063
+ Checking the geometry                         0.000        0.000
+ Initialisation of the Green's function        0.000        0.000
+ Calcul. of coupling for PO/Fock               0.000        0.000
+ Ray-launching phase of GO                     0.000        0.000
+ Calcul. of matrix elements                   62.946       62.946
+ Calcul. of right-hand side vector             0.000        0.000
+ Preconditioning system of linear eqns.        0.331        0.331
+ Solution of the system of linear eqns.        2.244        2.244
+ Eigensolution for characteristic modes        0.000        0.000
+ Determination of surface currents             0.000        0.000
+ Calcul. of impedances/powers/losses           1.028        1.028
+ Calcul. of averaged SAR values                0.000        0.000
+ Calcul. of power ideal receiving ant.         0.000        0.000
+ Calcul. of cable coupling                     0.000        0.000
+ Calcul. of error estimates                    0.000        0.000
+ Calcul. of electric near field                0.000        0.000
+ Calcul. of magnetic near field                0.000        0.000
+ Calcul. of far field                          0.000        0.000
+                            other              0.125        0.125
+                                         -----------  -----------
+                         total times:         66.737       66.737
+               (total times in hours:          0.019        0.019)
+
+ Specified CPU-times are referring to the master process only
+ Sum of the CPU-times of all processes:      133.474 seconds (    0.037 hours)
+ On average per process:                      66.737 seconds (    0.019 hours)
+
+ Peak memory usage during the whole solution: 3.316 MByte
+ (refers to the master process only)
+ Sum of the peak memory of all processes:     6.248 MByte
+ On average per process:                      3.124 MByte
+
+Finished: 2018-05-03 21:09:31                     

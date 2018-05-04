@@ -27,7 +27,7 @@ PW: 0
 
 ** Sources
 
-A1: 0 : biquad.Wire33.Port1 : 1 :  :  : 1 : 0 :  :  :  : 50   ** VoltageSource1
+A1: 0 : Union1.Wire33.Port1 : 1 :  :  : 1 : 0 :  :  :  : 50   ** VoltageSource1
 
 
 ** StandardConfiguration1
@@ -39,32 +39,34 @@ FR:  :  :  :  :  : 2400000000
 NC: StandardConfiguration1
 DA:  :  :  :  : 0
 
+** 
+** ** Far fields: FarField1
+** DA:  :  : 0 :  : 0 :  : 0
+** OF: 1 : 0 :  :  :  : 0 : 0 : 0 : 0 : 0 : 0
+** FF: 1 : 1 : 181 : 0 : 0 : 90 : 0 : 0 : 2 :  :  : 0   ** FarField1
 
-** Far fields: FarField1
-DA:  :  : 0 :  : 0 :  : 0
-OF: 1 : 0 :  :  :  : 0 : 0 : 0 : 0 : 0 : 0
-FF: 1 : 1 : 181 : 0 : 0 : 90 : 0 : 0 : 2 :  :  : 0   ** FarField1
+** 
+** ** Far fields: FarField2
+** DA:  :  : 0 :  : 0 :  : 0
+** OF: 1 : 0 :  :  :  : 0 : 0 : 0 : 0 : 0 : 0
+** FF: 1 : 181 : 1 : 0 : 0 : -180 : 0 : 2 : 0 :  :  : 0   ** FarField2
 
+** 
+** ** Far fields: FarField3
+** DA:  :  : 0 :  : 0 :  : 0
+** OF: 1 : 0 :  :  :  : 0 : 0 : 0 : 0 : 0 : 0
+** FF: 1 : 181 : 1 : 0 : 0 : -180 : 90 : 2 : 0 :  :  : 0   ** FarField3
 
-** Far fields: FarField2
-DA:  :  : 0 :  : 0 :  : 0
-OF: 1 : 0 :  :  :  : 0 : 0 : 0 : 0 : 0 : 0
-FF: 1 : 181 : 1 : 0 : 0 : -180 : 0 : 2 : 0 :  :  : 0   ** FarField2
+** 
+** ** Far fields: FarField4
+** DA:  :  : 0 :  : 0 :  : 0
+** OF: 1 : 0 :  :  :  : 0 : 0 : 0 : 0 : 0 : 0
+** FF: 1 : 37 : 73 : 0 : 0 : 0 : 0 : 5 : 5 :  :  : 0   ** FarField4
 
-
-** Far fields: FarField3
-DA:  :  : 0 :  : 0 :  : 0
-OF: 1 : 0 :  :  :  : 0 : 0 : 0 : 0 : 0 : 0
-FF: 1 : 181 : 1 : 0 : 0 : -180 : 90 : 2 : 0 :  :  : 0   ** FarField3
-
-
-** Far fields: FarField4
-DA:  :  : 0 :  : 0 :  : 0
-OF: 1 : 0 :  :  :  : 0 : 0 : 0 : 0 : 0 : 0
-FF: 1 : 37 : 73 : 0 : 0 : 0 : 0 : 5 : 5 :  :  : 0   ** FarField4
+OS:0
 
 
 ** End of file
 EN
 
-** CADFEKO Checksum: b9914c6495aac5241c5faf3f76088889
+** CADFEKO Checksum: 06f99e4b21b05ee0da7424d60bf3f8cf

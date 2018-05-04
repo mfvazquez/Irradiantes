@@ -1,0 +1,59 @@
+=========================  L O G - FILE - OPTFEKO  =========================
+
+Version: 7.0-0 of 2013-09-23
+Date: 2018-05-03 21:05:33
+File: biquad
+
+OPTIMISATION WITH FEKO
+
+=============== Optimisation variables ===============
+
+No.  Name                                  Beg.value          Minimum          Maximum
+  1 freq                             2.400000000e+09  2.400000000e+09  2.450000000e+09
+
+
+
+=============== Optimisation goals ===============
+
+No.  Name                            Expression
+  1 search1.goals.impedancegoal1    min(ex_vswr:50(impedance(voltagesource1)))
+
+
+=============== Optimisation method: SIMPLEX NELDER-MEAD ===============
+
+Maximum number of iterations:                      1000
+Base of the simplex:                    1.500000000e-01
+Reduction factor of the base:           5.000000000e-01
+Termination at minimal base:            5.000000000e-03
+Termination at standard deviation:      1.000000000e-04
+Standard reflection coefficient (R):    1.000000000e+00
+Contraction coefficient (-C, +C):       5.000000000e-01
+Expansion coefficient (E):              2.000000000e+00
+
+
+=============== SIMPLEX NELDER-MEAD: Intermediate results ===============
+
+ No.    freq             search1.goals.i  global goal      Operation   Global best aim
+     1  2.400000000e+09  1.311790901e+00  1.311790901e+00       -----  1.311790901e+00
+     2  2.407500000e+09  1.260222826e+00  1.260222826e+00       -----  1.260222826e+00
+     3  2.415000000e+09  1.212323468e+00  1.212323468e+00           R  1.212323468e+00
+     4  2.422500000e+09  1.169397305e+00  1.169397305e+00   E success  1.169397305e+00
+     5  2.430000000e+09  1.134143440e+00  1.134143440e+00           R  1.134143440e+00
+     6  2.437500000e+09  1.111929417e+00  1.111929417e+00   E success  1.111929417e+00
+     7  2.445000000e+09  1.109300566e+00  1.109300566e+00           R  1.109300566e+00
+   ---  2.452500000e+09  Parameter set does not adhere to boundary constraints. No goal function values were computed.
+   ---  2.452500000e+09  Parameter set does not adhere to boundary constraints. No goal function values were computed.
+     8  2.441250000e+09  1.107845808e+00  1.107845808e+00  -C success  1.107845808e+00
+     9  2.437500000e+09  1.111929417e+00  1.111929417e+00           R
+    10  2.443125000e+09  1.107873914e+00  1.107873914e+00  -C success
+
+
+=============== SIMPLEX NELDER-MEAD: Finished ===============
+
+Optimisation finished (Standard deviation small enough:   1.987376577e-05)
+
+Optimum found for these parameters:
+  freq                           =   2.441250000e+09
+
+Optimum aim function value (at no. 8):   1.107845808e+00
+No. of the last analysis: 10
