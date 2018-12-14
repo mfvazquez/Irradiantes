@@ -1,0 +1,253 @@
+FEKO.CSV  Version 7.0-391 from 2014-05-05 (FEKO Suite 7.0)
+          PREFEKO Version 7.0-37 from 2014-05-02 [FEK: default 147; used 147] BINARY
+          CADFEKO_BATCH version 7.0-238289 (x64) from 2014-05-05                          
+          Copyright (c) 1999-2014 EM Software & Systems-S.A. (Pty) Ltd
+          ACML version 5.1.0
+Computer: PC WIN64 AMD64 ACML IMPI -- Matias-PC
+          Microsoft Windows 7 Ultimate Edition Service Pack 1 (Build 7601), Version 6.1.7601 x64 (SP 1.0)
+          AMD Phenom(tm) II X4 840 Processor; AuthenticAMD family 16 model 5 stepping 3 brand id 0
+          1 physical CPU with a total of 4 processors found (multi-core CPU with max. 4 cores per physical CPU)
+Threads:  OpenMP threading not used
+Date:     2018-05-10 00:01:42                     
+File:     ANTENA_opt_6
+Memory:   Unlimited, system allows maximum usage of 1.951 GByte
+          (for parallel runs memory limit is per process)
+          (installed memory 7.998 GByte, thereof free 5.443 GByte)
+MD5 Check:B06F0810A8C9AA6E596D4EF8BD7E2D95
+MD5 Total:52B77A8C533AE299CBF63A05D12B2854
+Licence:  Nodelocked licence no. 7925-6316-6622961               
+
+Number of parallel processes:     4 on 1 CPUs
+
+Master process    0 on machine: Matias-PC                      using 1 threads
+Server process    1 on machine: Matias-PC                      using 1 threads
+Server process    2 on machine: Matias-PC                      using 1 threads
+Server process    3 on machine: Matias-PC                      using 1 threads
+
+
+          Surface of all triangles in m*m:     2.61301E-02
+
+          Length of the segments in m:         2.44623E-01
+
+
+                                DATA FOR MEMORY USAGE
+
+ Number of metallic triangles:             478                                max. triangles:    MAXNDR    =      478
+ Number of dielectric triangles:             0
+ Number of aperture triangles:               0
+ Number of GO triangles:                     0
+ Number of windscreen triangles:             0
+ Number of FEM surface triangles:            0
+ Number of modal port triangles:             0
+ Number of metallic segments:              105                                max. segments:     MAXNSEG   =      105
+ Number of combined MoM/MTL segments:        0
+ Number of dielectr./magnet. cuboids:        0                                max. cuboids:      MAXNQUA   =        0
+ Number of tetrahedra:                       0                                max. tetrahedra:   MAXNTETRA =        0
+ Number of edges in PO region:               0                                max. edges:        MAXPOKA   =        0
+ Number of wedges in PO region:              0                                max. wedges:       MAXPOKL   =        0
+ Number of Fock regions:                     0                                max. Fock regions: MAXFOGE   =        0
+ Number of polygonal surfaces:               0                                max. surfaces:     MAXPOLYF  =        0
+                                                                              max. corner pts.:  MAXPOLYP  =        0
+ Number of UTD cylinders:                    0
+
+ Number of metallic edges (MoM):           689  unknown:      689 (electr.)   max. edges:        MAXNKA    =      717
+                                             0  unknown:        0 (magnet.)
+ Number of metallic edges (PO):              0  unknown:        0 (electr.)
+                                                unknown:        0 (magnet.)
+ Number of dielectric edges (MoM):           0  unknown:        0 (electr.)
+                                             0                  0 (magnet.)
+ Number of dielectric edges (PO):            0  unknown:        0 (electr.)
+                                                unknown:        0 (magnet.)
+ Number of aperture edges (MoM):             0  unknown:        0 (magnet.) 
+ Number of edges FEM/MoM surface:            0  unknown:        0 (electr.)
+                                             0                  0 (magnet.)
+ Number of nodes between segments:         106  unknown:      106             max. nodes:        MAXNKNO   =      168
+ Number of connection points:                0  unknown:        0             max. conn.:        MAXNV     =      100
+ Number of dielectric cuboids:               0  unknown:        0             max. cuboids:      MAXNQUA   =        0
+ Number of magnetic cuboids:                 0  unknown:        0
+ Number of dielectric faces (VEP):           0  unknown:        0
+ Number of magnetic faces (VEP):             0  unknown:        0
+
+ Number of basis funct. for MoM:           795  unknown:      795             max. basisf.       MAXNZEILE =      985
+ Number of basis funct. for PO:              0  unknown:        0             max. basisf.       MAXNKAPO  =        0
+
+ Distributed storage of MoM matrix for parallel version
+
+ read from input file:
+PS       0    0    3    1    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from input file:
+CG      -1    0   -1    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00-1.000E+00-1.000E+00 0.000E+00 0.000E+00
+ read from input file:
+DI       0    0   -1    0    0 1.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 1.000E+03 0.000E+00 0.000E+00
+ read from input file:
+PW       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from input file:
+A1       0    2    1    0    0 1.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 5.000E+01 0.000E+00 0.000E+00
+ read from input file:
+FR       0    0    0    0    0 2.400E+09 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from input file:
+NC       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from input file:
+DA       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ read from input file:
+OS       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+ 
+ 
+      ==============
+      CONFIGURATION: StandardConfiguration1
+      ==============
+
+
+                              DATA FOR DIELECTRIC MEDIA
+
+internal  relative     relative  conductivity   tan(delta)    tan(delta)    wavelength   mass density    volume     medium
+index  permittivity permeability   in S/m       (electric)    (magnetic)       in m       in kg/m^3      in m^3
+    0      1.00000      1.00000  0.00000E+00   0.00000E+00   0.00000E+00   1.24914E-01   1.00000E+03    infinite    0
+
+
+
+                    EXCITATION BY VOLTAGE SOURCE AT SEGMENT
+
+ Name:                        VoltageSource1
+ Excitation index:            N = 1
+ Frequency in Hz:             FREQ =    2.40000E+09
+ Wavelength in m:             LAMBDA =  1.24914E-01
+ Open circuit voltage in V:   |U0| =    1.00000E+00
+ Phase in deg.:               ARG(U0) =        0.00
+ Source at segment label:     ULA = Union1.Wire33.Port1
+ Absolute number of segment:  UNR = 1
+ Location of the excit. in m: X =  0.00000E+00
+                              Y =  0.00000E+00
+                              Z =  0.00000E+00
+ Positive feed direction:     X =  0.00000E+00
+                              Y =  1.00000E+00
+                              Z =  0.00000E+00
+
+
+                         DATA FOR THE GREEN'S FUNCTION
+
+                                   free space
+
+
+               All segments and triangles are perfectly conducting
+
+
+                    DISTRIBUTED STORAGE OF MATRIX
+
+   Number of rows of the matrix             =            795
+   Number of columns of the matrix          =            795
+   Number of rows of the process grid       =              2
+   Number of columns of the process grid    =              2
+   Block size                               =            128
+   Theoretical load in percent              =          77.64
+   Number of rows of local matrix (proc. 0) =            411
+   Number of columns of local mat.(proc. 0) =            411
+   Local memory requirement for matrix      =         168921 complex numbers
+   (corresponds to 1.289 MByte)
+
+ Storage using single precision
+
+ Memory requirement for MoM matrix:       795 rows *      795 columns =      632025 complex numbers
+ For the MoM matrix, a memory of       168921 complex numbers is used (i.e. 1.289 MByte)
+
+     Per process, 1.749 MByte of memory has been allocated dynamically,
+     which corresponds to 6.995 MByte in total for all processes together
+     (peak memory usage of 1.749 MByte per process so far)
+
+
+
+               PRE-CONDITIONING OF THE LINEAR SET OF EQUATIONS
+
+               Selected preconditioner algorithm: 1
+
+     CPU time for preconditioning:       0.024 seconds
+
+
+                    SOLUTION OF THE LINEAR SET OF EQUATIONS WITH SCALAGAU
+
+               Condition number of the matrix:  8.59662E+03
+
+               Floating point performance for LU decomposition:
+                    Not determined since computation time too short
+
+     CPU time for solving the linear set of equations:       0.121 seconds
+
+
+                         DATA OF THE VOLTAGE SOURCE NO. 1
+
+                    real part  imag. part   magnitude       phase
+ Current   in A    2.1828E-02 -8.0063E-04  2.1843E-02       -2.10
+ Admitt.   in A/V  2.1828E-02 -8.0063E-04  2.1843E-02       -2.10
+ Impedance in Ohm  4.5752E+01  1.6781E+00  4.5782E+01        2.10
+ Inductance  in H  1.1128E-10
+
+                                   Power in Watt: 1.09139E-02
+
+
+                              SCATTERING PARAMETERS
+
+       ports                                        magnitude          phase 
+    sink source     real part   imag. part      linear      in dB     in deg.
+ S     1      1  -4.40493E-02  1.82980E-02   4.76986E-02  -26.4299    157.44
+         Sum |S|^2 of these S-parameters:    2.27515E-03  -26.4299
+         Reference impedance in Ohm:  5.00000E+01
+
+
+
+
+                              SUMMARY OF LOSSES
+
+          Metallic elements:                          0.0000E+00 W
+          Dielectric:                                 0.0000E+00 W
+          Mismatch at feed:                           0.0000E+00 W
+          Non-radiating networks:                     0.0000E+00 W
+          Cables:                                     0.0000E+00 W
+          Backward power at passive waveguide ports:  0.0000E+00 W
+          Backward power at passive modal ports:      0.0000E+00 W
+                                                     -------------
+                Sum of all losses:                    0.0000E+00 W
+
+          Efficiency of the antenna:                    100.0000 %
+          (based on a total active power:             1.0914E-02 W)
+
+ read from input file:
+EN       0    0    0    0    0 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00 0.000E+00
+
+
+                    SUMMARY OF REQUIRED TIMES IN SECONDS
+
+                                            CPU-time      runtime
+ Reading and constructing the geometry         0.024        0.024
+ Checking the geometry                         0.002        0.002
+ Initialisation of the Green's function        0.000        0.000
+ Calcul. of coupling for PO/Fock               0.000        0.000
+ Ray-launching phase of GO                     0.000        0.000
+ Calcul. of matrix elements                    0.958        0.958
+ Calcul. of right-hand side vector             0.001        0.001
+ Preconditioning system of linear eqns.        0.024        0.024
+ Solution of the system of linear eqns.        0.121        0.121
+ Eigensolution for characteristic modes        0.000        0.000
+ Determination of surface currents             0.000        0.000
+ Calcul. of impedances/powers/losses           0.055        0.055
+ Calcul. of averaged SAR values                0.000        0.000
+ Calcul. of power ideal receiving ant.         0.000        0.000
+ Calcul. of cable coupling                     0.000        0.000
+ Calcul. of error estimates                    0.000        0.000
+ Calcul. of electric near field                0.000        0.000
+ Calcul. of magnetic near field                0.000        0.000
+ Calcul. of far field                          0.000        0.000
+                            other              0.014        0.014
+                                         -----------  -----------
+                         total times:          1.199        1.199
+               (total times in hours:          0.000        0.000)
+
+ Specified CPU-times are referring to the master process only
+ Sum of the CPU-times of all processes:        4.796 seconds (    0.001 hours)
+ On average per process:                       1.199 seconds (    0.000 hours)
+
+ Peak memory usage during the whole solution: 1.776 MByte
+ (refers to the master process only)
+ Sum of the peak memory of all processes:     6.768 MByte
+ On average per process:                      1.692 MByte
+
+Finished: 2018-05-10 00:01:43                     

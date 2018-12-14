@@ -1,0 +1,63 @@
+=========================  L O G - FILE - OPTFEKO  =========================
+
+Version: 7.0-0 of 2013-09-23
+Date: 2018-05-10 00:00:25
+File: ANTENA
+
+OPTIMISATION WITH FEKO
+
+=============== Optimisation variables ===============
+
+No.  Name                                  Beg.value          Minimum          Maximum
+  1 alto_aleta                       1.400000000e-02  1.400000000e-02  1.600000000e-02
+
+
+
+=============== Optimisation goals ===============
+
+No.  Name                            Expression
+  1 search1.goals.impedancegoal1    min(ex_vswr:50(impedance(voltagesource1)))
+
+
+=============== Optimisation method: SIMPLEX NELDER-MEAD ===============
+
+Maximum number of iterations:                      1000
+Base of the simplex:                    1.500000000e-01
+Reduction factor of the base:           5.000000000e-01
+Termination at minimal base:            5.000000000e-03
+Termination at standard deviation:      1.000000000e-04
+Standard reflection coefficient (R):    1.000000000e+00
+Contraction coefficient (-C, +C):       5.000000000e-01
+Expansion coefficient (E):              2.000000000e+00
+
+
+=============== SIMPLEX NELDER-MEAD: Intermediate results ===============
+
+ No.    alto_aleta       search1.goals.i  global goal      Operation   Global best aim
+     1  1.400000000e-02  1.100060598e+00  1.100060598e+00       -----  1.100060598e+00
+     2  1.430000000e-02  1.101755498e+00  1.101755498e+00       -----
+   ---  1.370000000e-02  Parameter set does not adhere to boundary constraints. No goal function values were computed.
+     3  1.415000000e-02  1.101088472e+00  1.101088472e+00  -C success
+   ---  1.385000000e-02  Parameter set does not adhere to boundary constraints. No goal function values were computed.
+     4  1.407500000e-02  1.100417868e+00  1.100417868e+00  -C success
+   ---  1.392500000e-02  Parameter set does not adhere to boundary constraints. No goal function values were computed.
+     5  1.403750000e-02  1.100241569e+00  1.100241569e+00  -C success
+   ---  1.396250000e-02  Parameter set does not adhere to boundary constraints. No goal function values were computed.
+     6  1.401875000e-02  1.100175332e+00  1.100175332e+00  -C success
+
+
+=============== SIMPLEX NELDER-MEAD: Finished ===============
+
+Optimisation finished (Standard deviation small enough:   8.112883464e-05)
+
+Optimum found for these parameters:
+  alto_aleta                     =   1.400000000e-02
+
+Optimum aim function value (at no. 1):   1.100060598e+00
+No. of the last analysis: 6
+
+Sensitivity of optimum value with respect to each optimisation parameter,
+i.e. the gradient of the aim function at 1% variation from the optimum:
+Parameter                          Sensitivity
+  alto_aleta                       2.758913974e+00
+
